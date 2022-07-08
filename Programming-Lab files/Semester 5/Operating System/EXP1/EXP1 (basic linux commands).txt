@@ -1,4 +1,4 @@
-Exp1 is the learn basic linux commands 
+Exp1 is to learn the basic linux commands 
 
 
 source :
