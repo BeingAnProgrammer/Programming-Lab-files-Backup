@@ -1,0 +1,6 @@
+Exp1 is the learn basic linux commands 
+
+
+source :
+
+https://www.javatpoint.com/linux-commands
