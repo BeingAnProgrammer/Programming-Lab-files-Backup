@@ -1,4 +1,4 @@
-// This is a problem for implementing producer condumer 
+// This is a program for implementing producer consumer problem
 #include<stdio.h>
 #include<stdlib.h>
 
