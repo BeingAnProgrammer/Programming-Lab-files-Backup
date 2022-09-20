@@ -1,0 +1,35 @@
+<!-- 
+      AJAX Methods
+<i>  XMLHttpRequest() is used to request data from a server 
+<ii>  onreadyStateChange() defines a function to be executed when state changes
+<iii> Open() specifies the type of request
+<iv>  Send() sends the request to server
+
+-->
+
+<html>
+
+<body>
+
+  <div id="demo">
+    <h1>Sample Ajax page</h1>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+  </div>
+
+  <script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML =
+            this.responseText;
+        }
+      };
+      xhttp.open("GET", "info.txt", true);
+      xhttp.send();
+    }
+  </script>
+
+</body>
+
+</html>
