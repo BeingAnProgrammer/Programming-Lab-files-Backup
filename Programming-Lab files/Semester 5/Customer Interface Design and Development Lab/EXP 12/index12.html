@@ -1,0 +1,12 @@
+<html >
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body >
+    <div ng-app ng-init="greet='Hello World!'; amount= 10000;rateOfInterest = 10.5; duration=10;  myArr = [100, 200]; person = { firstName:'Steve', lastName :'Jobs'}">
+        {{ (amount * rateOfInterest * duration)/100 }}<br />
+        {{myArr[1]}} <br />
+        {{person.firstName + " " + person.lastName}}
+    </div>
+</body>
+</html>
