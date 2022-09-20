@@ -1,0 +1,69 @@
+<!--
+    The JQuery event is used to trigger some methods when only interactions has happened with the page
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(
+				function()
+				{
+					$("button").click(
+						function()
+						{
+							$("img").toggle();
+						});
+					$("#creations").dblclick(
+						function()
+						{
+							$(this).hide();
+						});
+					$("#creations").dblclick(
+						function()
+						{
+							$(this).hide();
+						});
+					$("img").mouseenter(
+						function()
+						{
+							$("#intro").hide();
+						}
+					);
+					$("img").mouseleave(
+						function()
+						{
+							$("#intro").show();
+						}
+					);
+
+});
+</script>
+</head>
+<body>
+<center>
+<h2>Authors Page</h2>
+
+<p>Name: Ram Dhari Singh Dinkar</p>
+<img src='dinkar.jpg'><br>
+
+Click on the Following names to hide them.
+<div id='creations'>
+<ol>
+	<li>Rashmirathi
+	<li>Hunkar
+</ol>
+</div>
+<div id='intro'>
+Ramdhari Singh, known by his pen name Dinkar, was an Indian Hindi and Maithili language poet, essayist, freedom fighter, patriot and academic. He emerged as a poet of rebellion as a consequence of his nationalist poetry written in the days before Indian independence.
+</div>
+<br>
+<button>Show/Hide Picture</button>
+</center>
+</body>
+</html>
