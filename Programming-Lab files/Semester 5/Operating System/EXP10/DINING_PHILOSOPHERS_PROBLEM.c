@@ -62,3 +62,21 @@ philosopher(i);
 getch();
 }
 }
+
+// OUTPUT:
+// DINNER’S PHILOSOPHERS PROBLEM
+//  ALL THE PHILOSOPHERS ARE THINKING !!....
+// The philosophers 1 falls hungry
+// Philosopher 1 can eat
+// Philosopher 1 has completed its work
+// The philosophers 2 falls hungry
+// Philosopher 2 can eat
+// Philosopher 2 has completed its work
+// The philosophers 3 falls hungry
+// Philosopher 3 can eat
+// Philosopher 3 has completed its work
+// The philosopher 4 falls hungry
+// Philosopher 4 can eat
+// Philosopher 4 has completed its work
+// The philosophers 5 falls hungry
+// Philosopher 5 can Philosopher 5 has completed its word
