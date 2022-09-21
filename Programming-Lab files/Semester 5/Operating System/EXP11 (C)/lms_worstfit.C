@@ -1,3 +1,4 @@
+// producer consumer problem
 #include<stdio.h>
 #define max 25
 
