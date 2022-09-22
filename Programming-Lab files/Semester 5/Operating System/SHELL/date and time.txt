@@ -1,0 +1,20 @@
+AIM:-
+To write a program for manipulating the date/time/calendar using shell
+commands
+ALGORITHM:-
+1) To display login name logname variable is used.
+2) Display userinfo using variable who I am.
+3) Display date(present) using variable date.
+4) Display current directory using pwd variable
+
+PROGRAM:-
+echo “hello,$LOGNAME”
+echo “user is,’whoi am’”
+echo “date is,’date’”
+echo “current directory,$(pwd)”
+
+OUTPUT:-
+hello,admin
+user is ,cse pts/12 2017-02-16 13:48(scse008.mobilelab.com)
+date is, 2017-02-16 13:48
+Current directory,/home/cse

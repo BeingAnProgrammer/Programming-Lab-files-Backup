@@ -1,0 +1,25 @@
+EXP NAME:-CONVERTING FILES NAMES FROM UPPERCASE TO LOWERCASE
+AIM:-
+To write a program for converting files from uppercase case to lowercase.
+ALGORITHM:-
+ 1) Get the file name.
+ 2) store the name in a variable.
+3) Apply conversion to that variable.
+ 4) Store it in other variable.
+ 5) Finally display the converted file name.
+
+PROGRAM:-
+for i in vishnu
+do
+echo “before conversion is”
+echo $i;
+j=`echo $i|tr’[a-z]’’[A-Z]’`
+echo “after conversion is”
+echo $j;
+done
+
+OUTPUT:-
+Before conversion is
+vishnu
+After conversion is
+VISHNU
