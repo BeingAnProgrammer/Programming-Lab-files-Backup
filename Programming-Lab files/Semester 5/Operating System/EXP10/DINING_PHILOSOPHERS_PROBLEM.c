@@ -4,6 +4,7 @@
 // 2. Associate two functions getfork(i) and putfork(i) for each philosopher i.
 // 3. For each philosopher I call getfork(i) , test(i) and putfork(i) if i is 0
 // 4. Stop
+// 
 
 #include<stdio.h>
 #include<conio.h>
