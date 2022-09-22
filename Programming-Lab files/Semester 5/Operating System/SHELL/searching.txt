@@ -1,0 +1,41 @@
+EXP NAME:-SEARCHING A SUBSTRING IN A GIVEN TEXT
+AIM:To write a program for searching a substring in a given text by using shell
+programming.
+ALGORITHM:1) To select a substring from string using ${string: starting position :root position}
+2) Comparing two strings is done by {$s1=$s2} 3) To check for zero length string use [-z String] 4) To check for empty string use [String] 5) To check for non zero length string use –n as [-n $string]
+6) The length of string is obtained by ${#string}
+
+PROGRAM:
+
+echo Enter main string:
+read main
+l1=`echo $main | wc -c`
+l1=`expr $l1 - 1`
+echo Enter sub string:
+read sub
+l2=`echo $sub | wc -c`
+l2=`expr $l2 - 1`
+n=1
+m=1
+pos=0
+while [ $n -le $l1 ]
+do
+a=`echo $main | cut -c $n`
+b=`echo $sub | cut -c $m`
+if [ $a = $b ]
+then
+n=`expr $n + 1`
+m=`expr $m + 1`
+pos=`expr $n - $l2`
+r=`expr $m - 1`
+if [ $r -eq $l2 ]
+then
+break
+fi
+else
+pos=0
+m=1
+n=`expr $n + 1`
+fi
+done
+echo Position of sub stringin main string is $pos
